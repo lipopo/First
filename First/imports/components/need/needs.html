@@ -1,0 +1,8 @@
+﻿<div>
+	<ul>
+		<li ng-repeat="need in $ctrl.needdates" class="datess">时间:{{need.time}}人物：{{need.people}}</br>内容：{{need.thing}}</li>
+	</ul>
+	输入名称：<input ng-model="$ctrl.people"/>
+	输入内容：<input ng-model="$ctrl.thing"/>
+	<button ng-click="$ctrl.send()">发送</button>
+</div>

@@ -1,0 +1,16 @@
+<div ng-repeat="date in $ctrl.dates">
+<div class="command">
+	<span>{{date.title}}</span><span>   最后一次修改时间：{{date.data}}</span>
+	<span ng-switch="date.inhere">
+	<span id='small' ng-switch-when="1">正在编辑</span>
+	</span>
+	<div class="little">
+		<button type="button" class="btn btn-default" ng-click="$ctrl.talk(date)">编辑</button>
+		<button type="button" class="btn btn-default" ng-click="$ctrl.submits(date);">保存</button>
+	</div>
+</div>
+<div class="text-area" ng-switch="date.inhere">
+	<textarea class="txtin border" ng-switch-when="1" wrap="hard" ng-model="date.value" rows=1 name=s1 cols=27 onpropertychange= "this.style.posHeight=this.scrollHeight " ng-change="$ctrl.upda(date)"></textarea>
+	<textarea class="txtin border" ng-switch-when="2" wrap="hard" ng-model="date.value" rows=1 name=s1 cols=27 onpropertychange= "this.style.posHeight=this.scrollHeight " readonly></textarea>
+</div>
+</div>

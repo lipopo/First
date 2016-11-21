@@ -1,0 +1,78 @@
+/* CSS declarations go here */
+.header{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:20px;
+	text-align:center;
+	font-size:15px;
+	background-color:#777777;
+	color:#ffffff;
+	z-index:13;
+}
+
+.connet{
+	position:absolute;
+	top:20px;
+	left:15%;
+	width:70%;
+	
+}
+
+.command{
+	position:relative;
+	top:15px;
+	height:42px;
+	text-align:left;
+	background-color:#eeeeee;
+	border-style:dotted;
+
+}
+
+.command span{
+	font-size:17px;
+	font-style:oblique;
+	color:#999999;
+}
+
+.little{
+	position:relative;
+	left:85%;
+	top:-25px;
+}
+
+.txtin{
+	position:relative;
+	top:10px;
+	width:100%;
+	overflow:auto; 
+	word-break:break-all; 
+	bottom:10px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+.border{
+	border-style:dashed;
+	background-color:#666666;
+}
+
+#small{
+	font-size:14px;
+	font-style:oblique;
+	color:#00ff00;
+}
+
+.datess{
+	font-size:15px;
+	color:#0000ff;
+}
+
+.need{
+	position:fixed;
+	top:10px;
+	left:10px;
+	width:15%;
+	background-color:#eeeeee;
+}
